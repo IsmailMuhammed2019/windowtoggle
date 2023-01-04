@@ -3,9 +3,15 @@ import './App.css';
 import WindowTracker from './WindowTracker'
 
 function App() {
+  const [show, setShow] =React.useState(true)
+
+  function toggle() {
+    setShow(prev => !prev)
+  }
   return (
     <div className="App">
-      <WindowTracker />
+      <button onClick={toggle}>Toggle WindowTracker</button>
+      {show && <WindowTracker />}
     </div>
   );
 }
