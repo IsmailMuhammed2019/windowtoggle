@@ -10,7 +10,7 @@ function App() {
   }
   return (
     <div className="App">
-       <button>Toggle WindowTracker</button>
+      <button>Toggle WindowTracker</button>
       {show && <windowTracker />}
     </div>
   );
